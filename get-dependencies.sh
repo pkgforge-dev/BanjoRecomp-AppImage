@@ -13,7 +13,7 @@ echo "---------------------------------------------------------------"
 get-debloated-pkgs --add-common --prefer-nano
 
 # Comment this out if you need an AUR package
-make-aur-package banjorecomp
+PRE_BUILD_CMDS='sed -i "/\.desktop\"$/ { s/$/)/; n; d; }; /'231b48ef3b38bb06b4412ec911c13d5938f29b511ea0a814c364182fa112c01b'/ { s/$/)/; n; d; }" ./PKGBUILD'  make-aur-package banjorecomp
 
 # If the application needs to be manually built that has to be done down here
 
