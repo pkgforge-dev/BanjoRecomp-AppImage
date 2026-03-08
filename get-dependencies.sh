@@ -35,6 +35,7 @@ if ! wget --retry-connrefused --tries=30 "$ZIP_LINK" -O /tmp/app.zip 2>/tmp/down
 fi
 
 mkdir -p ./AppDir/bin
+mkdir -p ./BanjoRecomp
 bsdtar -xvf /tmp/app.zip -C ./BanjoRecomp
 mv -v ./BanjoRecomp/BanjoRecompiled ./AppDir/bin
 mv -v ./BanjoRecomp/assets ./AppDir/bin
