@@ -10,8 +10,6 @@ export UPINFO="gh-releases-zsync|${GITHUB_REPOSITORY%/*}|${GITHUB_REPOSITORY#*/}
 export ICON=https://raw.githubusercontent.com/BanjoRecomp/BanjoRecomp/refs/heads/main/icons/app.png
 export DESKTOP=https://raw.githubusercontent.com/BanjoRecomp/BanjoRecomp/refs/heads/main/.github/linux/BanjoRecompiled.desktop
 export STARTUPWMCLASS=BanjoRecompiled
-export DEPLOY_GTK=1
-export GTK_DIR=gtk-3.0
 export DEPLOY_VULKAN=1
 
 # Deploy dependencies
